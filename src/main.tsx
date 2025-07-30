@@ -7,11 +7,13 @@ import {
   QueryClientProvider,
 } from '@tanstack/react-query'
 import  {ToastContainer } from "react-toastify"
+import { Analytics } from "@vercel/analytics/next"
 const queryClient = new QueryClient();
 
 createRoot(document.getElementById('root')!).render(
   <QueryClientProvider client={queryClient}>
     <App />
     <ToastContainer/>
+    <Analytics/>
   </QueryClientProvider>,
 )

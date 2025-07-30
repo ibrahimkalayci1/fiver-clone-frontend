@@ -9,6 +9,7 @@ import Search from "./pages/search"
 import Detail from "./pages/detail"
 import AddGig from "./pages/add-gig"
 import Protected from "./components/protected"
+
 const App = () => {
   return (
     <BrowserRouter>
